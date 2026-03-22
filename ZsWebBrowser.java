@@ -31,7 +31,7 @@ public class ZsWebBrowser extends MIDlet implements CommandListener {
     private Command back = new Command("Back", Command.BACK, 1);
     private Command exit = new Command("Exit", Command.EXIT, 9);
 
-    private static final String HTTPS = "https://zsweb.onrender.com";
+    private static final String HTTPS = "https://zsweb.onrender.com"; //change this for your own
     private static final String HTTP  = "http://10.0.2.2:3000";
 
     public ZsWebBrowser() {
@@ -39,7 +39,7 @@ public class ZsWebBrowser extends MIDlet implements CommandListener {
         display = Display.getDisplay(this);
 
         main = new Form("zsweb");
-        urlField = new TextField("URL", "https://example.com", 255, TextField.URL);
+        urlField = new TextField("URL", "https://google.com", 255, TextField.URL);
         content = new StringItem("", "Welcome to zsweb ULTRA");
 
         main.append(urlField);
